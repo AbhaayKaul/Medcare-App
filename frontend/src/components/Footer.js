@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
 function Footer() {
   return (
@@ -7,12 +7,12 @@ function Footer() {
       <footer>
         <Container>
           <Row>
-            <Col className="text-center py-3">Copyright &copy; ProShop</Col>
+            <Col className="text-center py-3">Copyright &copy; Healthify</Col>
           </Row>
         </Container>
       </footer>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

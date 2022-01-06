@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Signin from './Screens/Signin'
+import Signup from './Screens/Signup'
 import HomeScreen from './Screens/HomeScreen'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             {/* <h1>Welcome to ProShop</h1> */}
             <Route path="/login" element={<Signin />} />
+            <Route path="/Singup" element={<Signup />} />
             <Route path="/" element={<HomeScreen />} />
           </Routes>
         </Container>
