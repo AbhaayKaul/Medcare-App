@@ -4,6 +4,14 @@ import { Form, Button } from 'react-bootstrap'
 function Signin() {
   return (
     <Form>
+      <Form.Group className="mb-3">
+      <Form.Label>Sign In As</Form.Label>
+      <Form.Select enabled>
+        <option>Doctor</option>
+        <option>Patient</option>
+        <option>Admin</option>
+        </Form.Select>
+        </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
