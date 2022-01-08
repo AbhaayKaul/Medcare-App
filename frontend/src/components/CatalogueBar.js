@@ -1,18 +1,5 @@
 import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-
-const CatalogueBar = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 })
-  }, [])
-
-  return (
-    <Container data-aos="fade-up" className="text-center my-5">
-=======
-import React, { useEffect } from 'react'
-import { Container } from 'react-bootstrap'
 import Aos from "aos";
 import "aos/dist/aos.css"
 
