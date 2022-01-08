@@ -1,46 +1,49 @@
-import React from "react";
-import { useEffect } from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from 'react'
+import { useEffect } from 'react'
+import { Form, Button, Row, Col } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import Message from '../components/Message'
 
 function Signin() {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const [userType, setUserType] = React.useState("1");
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
+  const [email, setEmail] = React.useState('')
+  const [password, setPassword] = React.useState('')
+  const [userType, setUserType] = React.useState('1')
+  const [authenicated, setIsAuthenticated] = React.useState(false)
 
   const getData = async () => {
     try {
       const config = {
         headers: {
-          "Content-type": "application/json",
+          'Content-type': 'application/json',
         },
-      };
+      }
 
       const { data } = await axios.post(
-        "/api/users/login",
+        '/api/users/login',
         { email, password },
         config
-      );
-
-      console.log(data);
+      )
+      navigate('/patient')
     } catch (error) {
-      console.log(error);
-      navigate("/login");
+      console.log(error)
+      setIsAuthenticated(true)
+      navigate('/login')
     }
-  };
+  }
 
   const submitHandler = (e) => {
-    e.preventDefault();
-    getData();
-  };
+    e.preventDefault()
+    getData()
+  }
 
   return (
     <>
@@ -98,6 +101,9 @@ function Signin() {
                 className="rounded-pill"
               />
             </Form.Group>
+            {authenicated && (
+              <Message variant="warning" children="Wrong Credentials" />
+            )}
           </Col>
           <Col md="3"></Col>
         </Row>
@@ -117,7 +123,7 @@ function Signin() {
         </Row>
       </Form>
     </>
-  );
+  )
 }
 
-export default Signin;
+export default Signin
