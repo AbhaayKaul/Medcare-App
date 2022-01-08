@@ -25,12 +25,8 @@
   },
   "homepage": "https://github.com/amanverma644/IOSDWinterHack#readme",
   "dependencies": {
-<<<<<<< HEAD
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
-=======
-
->>>>>>> c9185ed24191a5bddd72ce16b132c4568354eaf7
     "concurrently": "^7.0.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
