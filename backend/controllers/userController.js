@@ -6,7 +6,7 @@ import User from '../models/userModel.js'
 // @access  Public
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body
-  console.log(email, password)
+  // console.log(email, password)
 
   const user = await User.findOne({ email })
 
@@ -19,7 +19,7 @@ const authUser = asyncHandler(async (req, res) => {
       isDoctor: user.isDoctor,
     })
   } else {
-    console.log('testing')
+    // console.log('testing')
     res.status(401)
     throw new Error('Invalid email or password')
   }
