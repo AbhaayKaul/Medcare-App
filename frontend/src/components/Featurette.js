@@ -11,7 +11,7 @@ const Featurette = () => {
     <>
       {/* <Container */}
       <div
-        data-aos="fade-down"
+        data-aos="fade-left"
         className="row featurette margin-featurette box"
       >
         <div className="col-md-7">
