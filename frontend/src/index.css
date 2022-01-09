@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 .navbar-brand {
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* carousel */
@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   /* padding-top: 5px; */
-  margin-top: 3px;
+  /* margin-top: 3px; */
   padding: 10px;
   box-sizing: border-box;
 }
@@ -49,6 +49,7 @@
 
 /* h3 background color carousel */
 .h3-background-color {
+  margin-top: 20px;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -59,7 +60,7 @@
 
 /* font style */
 .font-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
 }
 
@@ -68,31 +69,14 @@
   color: black;
 }
 
-.patient-card:hover{
+.patient-card:hover {
   transition: ease-in-out;
   transform: scale(1.1);
   background: burlywood !important;
 }
 
-/* Box Animation  */
+/* Catalogue Bar */
 
-/* .box { */
-/* background-color: steelblue; */
-/* display: flex; */
-/* align-items: center; */
-/* justify-content: center; */
-/* width: 400px; */
-/* height: 200px; */
-/* margin: 10px; */
-/* border-radius: 10px; */
-/* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3); */
-/* transform: translateX(400%); */
-/* transition: transform 1s ease-in-out; */
-/* } */
-
-/* .box:nth-last-of-type(even) {
-  transform: translateX(-400%);
+.catalogue-bar-heading {
+  margin-top: 15px;
 }
-.box.show {
-  transform: translateX(0);
-} */
