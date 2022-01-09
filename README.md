@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# SUश्रुत 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> healthcare service platform using MERN stack
 
-## Available Scripts
+![screenshot]()
 
-In the project directory, you can run:
+## Deployment Link:
 
-### `npm start`
+> https://sushrut.herokuapp.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Full featured 3-way login (doctors,patients,admin) website
+- Order medicines online
+- Book appointments with doctor
+- storing medical reports of users on our database
+- Doctor's profile with option to upload medical report to patient's profile
+- Doctor's profile with option to access previous uploaded medical reports
+- Admin profile for database managment
+- Database seeder (users)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Env Variables
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a .env file in then root and add the following
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your mongodb uri
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install Dependencies (frontend & backend)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+cd frontend
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+# Run frontend (:3000) & backend (:5000)
+npm run dev
+# Run backend only
+npm run server
+```
 
-## Learn More
+## Build & Deploy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+# Create frontend prod build
+cd frontend
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
 
-### Code Splitting
+### Seed Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+You can use the following commands to seed the database with some sample users and products as well as destroy all data
 
-### Analyzing the Bundle Size
+```
+# Import data
+npm run data:import
+# Destroy data
+npm run data:destroy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+Sample User Logins
+admin@example.com (Admin)
+123456
+john@example.com (Customer)
+123456
+jane@example.com (Customer)
+123456
+```
