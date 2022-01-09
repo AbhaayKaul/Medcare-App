@@ -36,7 +36,7 @@ function Signin() {
       // if (data.isDoctor === userType) {
       //   navigate('/')
       // } else {
-      //   navigate('/patient')
+      navigate('/patient')
       // }
     } catch (error) {
       console.log(error)
