@@ -60,7 +60,7 @@ function Signin() {
               <Form.Label data-aos="fade-left">Sign In As</Form.Label>
               <Form.Select
                 data-aos="fade-right"
-                enabled
+                // enabled
                 value={userType}
                 onChange={(e) => setUserType(e.target.value)}
                 className="rounded-pill"

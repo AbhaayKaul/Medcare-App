@@ -80,9 +80,8 @@ function Signup() {
               <Form.Select
                 data-aos="fade-left"
                 className="rounded-pill"
-                enabled
                 value={userType}
-                onChange={(e) => handleOnchange(e)}
+                onChange={(e) => handleOnchange(setUserType(e.target.value))}
               >
                 <option value="1">Patient</option>
                 <option value="2">Admin</option>
