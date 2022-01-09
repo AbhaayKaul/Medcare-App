@@ -69,6 +69,12 @@
   color: black;
 }
 
+/* color white */
+.white-color {
+  color: white;
+}
+
+/* patient-card-hover */
 .patient-card:hover {
   transition: ease-in-out;
   transform: scale(1.1);
@@ -79,4 +85,15 @@
 
 .catalogue-bar-heading {
   margin-top: 15px;
+}
+
+/* navbar font size */
+
+.font-size-navbar{
+  font-size: 25px;
+}
+
+/* background-color */
+body{
+  background: gainsboro !important;
 }

@@ -8,8 +8,8 @@ function Header() {
       <header>
         <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
           <Container>
-            <Navbar.Brand as={Link} to={'/'}>
-             Suश्रुत
+            <Navbar.Brand  as={Link} to={'/'}>
+            <h1 className='white-color'>Suश्रुत</h1>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

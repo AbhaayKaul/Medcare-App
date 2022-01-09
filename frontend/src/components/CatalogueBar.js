@@ -13,10 +13,10 @@ const CatalogueBar = () => {
       <div className="row">
         <div className="col-lg-4">
           <i className="far fa-calendar-check fa-9x"></i>
-          <h2 className="catalogue-bar-heading">Heading</h2>
+          <h2 className="catalogue-bar-heading">100% Confidential
+          </h2>
           <p>
-            Some representative placeholder content for the three columns of
-            text below the carousel. This is the first column.
+          All advice & consultations are completely confidential. You can also delete chats whenever you want.
           </p>
           {/* <p> */}
           {/* <a className="btn btn-secondary" href="#"> */}
@@ -27,10 +27,9 @@ const CatalogueBar = () => {
         <div className="col-lg-4">
           <i className="fas fa-user-md fa-9x"></i>
 
-          <h2 className="catalogue-bar-heading">Heading</h2>
+          <h2 className="catalogue-bar-heading">Certified Doctors</h2>
           <p>
-            Another exciting bit of representative placeholder content. This
-            time, we've moved on to the second column.
+          We offer quality healthcare through our network of certified and experienced doctors
           </p>
           {/* <p> */}
           {/* <a className="btn btn-secondary" href="#"> */}
@@ -40,10 +39,10 @@ const CatalogueBar = () => {
         </div>
         <div className="col-lg-4">
           <i className="fas fa-pills fa-9x"></i>
-          <h2 className="catalogue-bar-heading">Heading</h2>
+          <h2 className="catalogue-bar-heading">Convenience
+          </h2>
           <p>
-            And lastly this, the third column of representative placeholder
-            content.
+          Forget the hassle of long queues and rush hour. Seek expert opinion anytime, anywhere.
           </p>
           {/* <p> */}
           {/* <a className="btn btn-secondary" href="#"> */}
