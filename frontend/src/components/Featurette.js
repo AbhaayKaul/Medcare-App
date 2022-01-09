@@ -11,10 +11,10 @@ const Featurette = () => {
     <>
       {/* <Container */}
       <div
-        data-aos="fade-left"
+        
         className="row featurette margin-featurette box"
       >
-        <div className="col-md-7">
+        <div data-aos="fade-left" className="col-md-7">
           <h1 className="featurette-heading ">Start a session</h1>
           <p className="lead">
             Select the type of category you would like to consult with the
@@ -22,14 +22,14 @@ const Featurette = () => {
           </p>
         </div>
         <div className="col-md-5">
-          <Image src="/images/service-1.png" />
+          <Image data-aos="fade-up" src="/images/service-1.png" />
         </div>
       </div>
       <div
-        data-aos="fade-right"
+        
         className="row featurette margin-featurette box"
       >
-        <div className="col-md-7 order-md-2">
+        <div data-aos="fade-right" className="col-md-7 order-md-2">
           <h1 className="featurette-heading">Tell us what’s troubling you</h1>
           <p className="lead">
             Type in your concern and attach prescription, lab reports if any.
@@ -37,15 +37,15 @@ const Featurette = () => {
           </p>
         </div>
         <div className="col-md-5 order-md-1">
-          <Image src="/images/service-2.png" />
+          <Image data-aos="fade-up" src="/images/service-2.png" />
         </div>
       </div>
 
       <div
-        data-aos="fade-left"
+        
         className="row featurette margin-featurette box"
       >
-        <div className="col-md-7">
+        <div data-aos="fade-left" className="col-md-7">
           <h1 className="featurette-heading">Connect with the doctor</h1>
           <p className="lead">
             A doctor is auto-assigned to you that best matches your concern. You
@@ -53,12 +53,12 @@ const Featurette = () => {
           </p>
         </div>
         <div className="col-md-5">
-          <Image src="/images/service-3.png" />
+          <Image data-aos="fade-up" src="/images/service-3.png" />
         </div>
       </div>
 
-      <div data-aos="fade-up" className="row featurette margin-featurette box">
-        <div className="col-md-7 order-md-2">
+      <div  className="row featurette margin-featurette box">
+        <div data-aos="fade-right" className="col-md-7 order-md-2">
           <h1 className="featurette-heading">Follow up with your doctor.</h1>
           <p className="lead">
             Still, need more clarity? You can follow up with the doctor even
@@ -66,7 +66,7 @@ const Featurette = () => {
           </p>
         </div>
         <div className="col-md-5">
-          <Image src="/images/service-4.png" />
+          <Image data-aos="fade-down" src="/images/service-4.png" />
         </div>
       </div>
     </>
