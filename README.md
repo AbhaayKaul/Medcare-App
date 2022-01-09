@@ -6,7 +6,7 @@
 
 ## Deployment Link:
 
-> https://sushrut.herokuapp.com
+> https://sushrutapp.herokuapp.com/
 
 ## Features
 
