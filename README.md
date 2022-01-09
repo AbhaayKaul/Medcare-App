@@ -1,6 +1,6 @@
 # SUश्रुत 
 
-> healthcare service platform using MERN stack
+> Healthcare service platform using MERN stack
 
 ![screenshot](https://github.com/amanverma644/IOSDWinterHack/blob/master/uploads/Screenshot%202022-01-09%20at%2017-04-24%20Sushrut.png)
 ![screenshot](https://github.com/amanverma644/IOSDWinterHack/blob/master/uploads/Screenshot%202022-01-09%20at%2017-04-41%20Sushrut.png)
