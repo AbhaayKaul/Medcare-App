@@ -9,7 +9,7 @@
 
 ## Deployment Link:
 
-> https://sushrutapp.herokuapp.com/
+> https://sushrutdtu.herokuapp.com
 
 ## Features
 
