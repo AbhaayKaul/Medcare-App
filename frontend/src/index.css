@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 .navbar-brand {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 /* carousel */
@@ -12,7 +12,9 @@
 }
 .carousel-caption {
   position: absolute;
-  /* top: 0; */
+  top: 0;
+  /* padding-top: 5px; */
+  margin-top: 3px;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -43,6 +45,33 @@
 /* Featurette */
 .margin-featurette {
   margin-top: 10rem !important;
+}
+
+/* h3 background color carousel */
+.h3-background-color {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* opacity */
+.opaci-carousel {
+  opacity: 0.6;
+}
+
+/* font style */
+.font-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+/*Color black*/
+.black-color {
+  color: black;
+}
+
+.patient-card:hover{
+  transition: ease-in-out;
+  transform: scale(1.1);
+  background: burlywood !important;
 }
 
 /* Box Animation  */

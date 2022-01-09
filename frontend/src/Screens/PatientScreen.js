@@ -12,12 +12,11 @@ const PatientScreen = () => {
               src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Medicines</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Order Online Medicines
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button className='patient-card' variant="primary">Order Now</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -28,12 +27,11 @@ const PatientScreen = () => {
               src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Book an Appointment</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Consult a doctor, right from the comfort of your home.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button className='patient-card' variant="primary">Book now</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -41,12 +39,11 @@ const PatientScreen = () => {
           <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src="/images/medical-report.jpg" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Medical Records</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Access your previous Reports.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button className='patient-card' variant="primary">Click Here</Button>
             </Card.Body>
           </Card>
         </Col>
