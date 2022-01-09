@@ -41,19 +41,24 @@ const registerUser = asyncHandler(async (req, res) => {
     password,
   })
 
-  if (userType == 'admin')
-    if (user) {
-      res.status(210).json({
-        _id: user._id,
-        name: user.name,
-        email: user.email,
-        isAdmin: user.isAdmin,
-        isDoctor: user.isDoctor,
-      })
-    } else {
-      res.status(400)
-      throw new Error('Invalid user data')
-    }
+  if (userType === '2') {
+    user.isAdmin = true
+  }
+
+  user.save()
+
+  if (user) {
+    res.status(210).json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      isAdmin: user.isAdmin,
+      isDoctor: user.isDoctor,
+    })
+  } else {
+    res.status(400)
+    throw new Error('Invalid user data')
+  }
 })
 
 export { authUser, registerUser }

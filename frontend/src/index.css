@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,

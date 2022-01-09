@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -14,10 +13,10 @@ function Signin() {
     Aos.init({ duration: 2000 })
   }, [])
 
-  const [email, setEmail] = React.useState('')
-  const [password, setPassword] = React.useState('')
-  const [userType, setUserType] = React.useState('1')
-  const [authenicated, setIsAuthenticated] = React.useState(false)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [userType, setUserType] = useState('1')
+  const [authenicated, setIsAuthenticated] = useState(false)
 
   const getData = async () => {
     try {
@@ -32,7 +31,13 @@ function Signin() {
         { email, password },
         config
       )
-      navigate('/patient')
+
+      console.log(data)
+      // if (data.isDoctor === userType) {
+      //   navigate('/')
+      // } else {
+      //   navigate('/patient')
+      // }
     } catch (error) {
       console.log(error)
       setIsAuthenticated(true)
@@ -56,6 +61,7 @@ function Signin() {
               <Form.Select
                 data-aos="fade-right"
                 enabled
+                value={userType}
                 onChange={(e) => setUserType(e.target.value)}
                 className="rounded-pill"
               >
