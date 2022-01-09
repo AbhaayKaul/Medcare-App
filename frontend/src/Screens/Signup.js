@@ -11,12 +11,12 @@ function Signup() {
 
   const [fName, setFName] = useState('')
   const [lName, setLName] = useState('')
-  const [licNumber, setLicNumber] = useState('')
-  const [email, setEmail] = React.useState('')
-  const [password, setPassword] = React.useState('')
+  const [licenseNumber, setLicenseNumber] = useState(0)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
-  const [userType, setUserType] = React.useState('1')
-  const [error, setError] = React.useState(false)
+  const [userType, setUserType] = useState('1')
+  const [error, setError] = useState(false)
   const [isDoctor, setIsDoctor] = useState(false)
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Signup() {
 
       await axios.post(
         '/api/users',
-        { name, email, password, userType },
+        { name, email, password, userType, licenseNumber },
         config
       )
 
@@ -102,10 +102,10 @@ function Signup() {
                 <Form.Control
                   data-aos="flip-left"
                   className="rounded-pill"
-                  type="text"
+                  type="Number"
                   placeholder="Enter License Number"
-                  value={licNumber}
-                  onChange={(e) => setLicNumber(e.target.value)}
+                  value={licenseNumber}
+                  onChange={(e) => setLicenseNumber(e.target.value)}
                 />
                 <Form.Text className="text-visible"></Form.Text>
               </Form.Group>

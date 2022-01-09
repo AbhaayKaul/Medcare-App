@@ -26,6 +26,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       default: false,
     },
+    licenseNumber: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
   },
   {
     timestamps: true,

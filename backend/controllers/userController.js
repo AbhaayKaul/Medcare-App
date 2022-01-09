@@ -26,7 +26,7 @@ const authUser = asyncHandler(async (req, res) => {
 // @route   POST /api/users
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password, userType } = req.body
+  const { name, email, password, userType, licenseNumber } = req.body
 
   const userExists = await User.findOne({ email })
 
@@ -40,6 +40,11 @@ const registerUser = asyncHandler(async (req, res) => {
     email,
     password,
   })
+
+  if (userType === '3') {
+    user.licenseNumber = licenseNumber
+    user.isDoctor = true
+  }
 
   if (userType === '2') {
     user.isAdmin = true
